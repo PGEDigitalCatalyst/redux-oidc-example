@@ -22,7 +22,9 @@ const loggerMiddleware = store => next => action => {
 
 const initialState = {};
 
-const createStoreWithMiddleware = compose(
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const createStoreWithMiddleware = composeEnhancers(
   applyMiddleware(loggerMiddleware, routerMiddleware(browserHistory))
 )(createStore);
 

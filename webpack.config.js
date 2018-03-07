@@ -54,8 +54,9 @@ module.exports = {
     ]
   },
   devServer: {
-    https: true,
+    // https: true,
     stats: "errors-only",
-    historyApiFallback: true
+		historyApiFallback: true,
+		port: 80
   }
 };
