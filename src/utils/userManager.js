@@ -3,7 +3,7 @@ import { createUserManager } from 'redux-oidc';
 const userManagerConfig = {
 	authority: 'https://itiampingdev.cloud.pge.com',
 	client_id: 'digitcat_mobile_test_app_1',
-	redirect_uri: 'http://test.pge.com:3000/callback',
+	redirect_uri: 'http://test.pge.com/callback',
 	response_type: 'token id_token',
 	scope: 'email openid profile'
  
